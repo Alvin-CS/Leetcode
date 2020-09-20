@@ -22,11 +22,65 @@ Example:
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 
 */
-#include<stdio.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include "list.h"
 
-typedef struct Node {
-	int 
-};
+LinkList SwapPairs(LinkList head)
+{
+	if (head == NULL || head->next == NULL)
+		return head;
+
+	ListNode* CurNode = head;
+	ListNode* NxtNode = head->next;
+	ListNode* NxtArea = NxtNode->next;
+	ListNode* PreArea = NULL;
+
+	NxtNode->next = CurNode;
+	CurNode->next = NxtArea;
+	PreArea = CurNode;
+	
+	head = NxtNode;
+
+	while (NxtArea)
+	{	
+		CurNode = NxtArea;
+		NxtNode = CurNode->next;
+
+		if (NxtNode)
+		{
+			NxtArea = NxtNode->next;
+
+			NxtNode->next = CurNode;
+			CurNode->next = NxtArea;
+			
+			PreArea->next = NxtNode;
+			
+			PreArea = CurNode;
+		}
+		else
+		{
+			NxtArea = NULL;
+		}
+
+	}
+
+
+	return head;
+}
+
+
+int main()
+{
+	LinkList OriginalList = InitList(5);
+	DisplayList(OriginalList);
+
+	LinkList ResultList = SwapPairs(OriginalList);
+	DisplayList(ResultList);
+
+	return 0;
+}
+
 
 
 
