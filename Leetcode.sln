@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Leetcode_24_Swap Nodes in P
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Leetcode_206_Revers Linked List", "Leetcode_206_Revers Linked List\Leetcode_206_Revers Linked List.vcxproj", "{5799F33A-A676-4A79-A379-02D938FFA5D9}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Leetcode_1662_Check if Two String Arrays are Equivalent", "Leetcode_1662_Check if Two String Arrays are Equivalent\Leetcode_1662_Check if Two String Arrays are Equivalent.vcxproj", "{B50B06AB-1C03-4124-85CA-89C4D39AFD9F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{5799F33A-A676-4A79-A379-02D938FFA5D9}.Release|x64.Build.0 = Release|x64
 		{5799F33A-A676-4A79-A379-02D938FFA5D9}.Release|x86.ActiveCfg = Release|Win32
 		{5799F33A-A676-4A79-A379-02D938FFA5D9}.Release|x86.Build.0 = Release|Win32
+		{B50B06AB-1C03-4124-85CA-89C4D39AFD9F}.Debug|x64.ActiveCfg = Debug|x64
+		{B50B06AB-1C03-4124-85CA-89C4D39AFD9F}.Debug|x64.Build.0 = Debug|x64
+		{B50B06AB-1C03-4124-85CA-89C4D39AFD9F}.Debug|x86.ActiveCfg = Debug|Win32
+		{B50B06AB-1C03-4124-85CA-89C4D39AFD9F}.Debug|x86.Build.0 = Debug|Win32
+		{B50B06AB-1C03-4124-85CA-89C4D39AFD9F}.Release|x64.ActiveCfg = Release|x64
+		{B50B06AB-1C03-4124-85CA-89C4D39AFD9F}.Release|x64.Build.0 = Release|x64
+		{B50B06AB-1C03-4124-85CA-89C4D39AFD9F}.Release|x86.ActiveCfg = Release|Win32
+		{B50B06AB-1C03-4124-85CA-89C4D39AFD9F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
